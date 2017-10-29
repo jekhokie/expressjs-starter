@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-      <% include ../partials/head %>
+    <% include ../partials/head %>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% include ../partials/navbar %>
+
+    <div class="container">
+      <h1>Welcome to <%= title %></h1>
+      <p class="lead">This is an ExpressJS starter project!</p>
+    </div>
   </body>
 </html>
