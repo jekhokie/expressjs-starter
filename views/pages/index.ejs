@@ -9,6 +9,27 @@
     <div class="container">
       <h1>Welcome to <%= title %></h1>
       <p class="lead">This is an ExpressJS starter project!</p>
+
+      <h3>User List</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+          </tr>
+        <thead>
+
+        <tbody>
+          <% users.forEach(function(user) { %>
+            <tr>
+              <td><%= user.first_name %></td>
+              <td><%= user.last_name %></td>
+              <td><%= user.email %></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
