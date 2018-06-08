@@ -31,6 +31,9 @@ $ git clone https://github.com/jekhokie/expressjs-starter.git
 $ cd expressjs-starter/
 $ npm install
 
+# sequelize command-line
+$ sudo npm install -g sequelize-cli
+
 # dataabase setup
 $ cp config/config.json.sample config/config.json
 $ vim config/config.json
